@@ -46,13 +46,31 @@ a:active {
   color: #fff;
   float: right;
   font-size: 15px;
-  margin-right: 20px;
+  margin-right: 10px;
   width: 35px;
   height: 35px;
   line-height: 35px;
   border-radius: 50%;
   text-align: center;
-  border: 1px solid rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.top-user {
+  float: right;
+  color: #fff;
+  margin-right: 20px;
+  line-height: 35px;
+}
+
+.top-user em {
+  font-style: normal;
+  text-decoration: underline;
+}
+.btn-logout {
+  padding: 10px;
+  margin-left: 10px;
+  border-radius: 3px;
+  border: 1px solid rgba(255, 255, 255, 0.5)
 }
 
 .post {
@@ -73,6 +91,13 @@ a:active {
 
 .post h1 a:hover {
   color: #565656
+}
+
+.post .tag {
+  padding: 5px 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid #52BE80;
 }
 
 .post-detail__top {
@@ -123,16 +148,20 @@ a:active {
 .post-form h1 {
   margin: 0 0 30px;
 }
-.post-form input,
+.post-form input[type='text'],
+.login-form input[type='text'],
+.login-form input[type='password'],
 .post-form textarea {
   border: 1px solid #d3d3d3;
   padding: 10px;
   border-radius: 3px;
 }
 
-.btn-save {
+.btn-save,
+.btn-login {
   border-radius: 5px;
-  padding: 5px 20px;
+  width: 88px;
+  padding: 5px;
   color: #fff;
   text-align: center;
   line-height: 30px;
@@ -142,4 +171,32 @@ a:active {
 }
 .btn-save:hover {
   background-color: #B5AC49;
+}
+
+.login-form {
+  padding: 30px 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.2)
+}
+
+.login-form table {
+  margin-bottom: 20px;
+}
+
+.login-form td {
+  padding: 5px 0;
+}
+
+.login-form label {
+  margin-right: 10px;
+}
+.notification {
+  padding: 10px;
+  border: 1px solid rgb(200, 180, 120);
+  background-color: rgb(230, 230, 120);
+}
+
+.notification span {
+  color: rgb(200, 180, 120);
 }
