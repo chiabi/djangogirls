@@ -9,6 +9,8 @@ h1, h2, h3, h4 {
 }
 
 a,
+a:hover,
+a:focus,
 a:visited,
 a:active {
   color: inherit;
@@ -67,11 +69,69 @@ a:active {
   color: #232323;
 }
 
+.post h1 a:hover {
+  color: #565656
+}
+
 .post-detail .date {
   float: right;
+}
+.post-detail .btn {
+  float: right;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  margin-left: 10px;
+  margin-top: -3px;
+  border-radius: 50%;
+  border: 0;
+  color: #fff;
+  text-align: center;
+  line-height: 30px;
+  font-size: 12px;
+  background-color: #52BE80;
+}
+.post-detail .btn:hover {
+  background-color: #B5AC49;
 }
 .post-detail h1 {
   padding-bottom: 20px;
   margin-bottom: 25px;
   border-bottom: 1px solid rgba(0,0,0,0.1)
+}
+
+.post-form {
+  padding: 30px 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.2)
+}
+.post-form:after {
+  display: block;
+  content: '';
+  clear: both;
+}
+
+.post-form h1 {
+  margin: 0 0 30px;
+}
+.post-form input,
+.post-form textarea {
+  border: 1px solid #d3d3d3;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+.btn-save {
+  border-radius: 5px;
+  padding: 5px 20px;
+  color: #fff;
+  text-align: center;
+  line-height: 30px;
+  font-size: 16px;
+  border: 0;
+  background-color: #52BE80;
+}
+.btn-save:hover {
+  background-color: #B5AC49;
 }
