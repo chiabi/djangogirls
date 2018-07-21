@@ -75,11 +75,14 @@ a:active {
   color: #565656
 }
 
-.post-detail .date {
+.post-detail__top {
   float: right;
 }
-.post-detail .btn {
-  float: right;
+.post-detail__top .date {
+  float: left;
+}
+.post-detail__top .btn {
+  float: left;
   height: 30px;
   padding: 0 10px;
   margin-left: 10px;
@@ -92,7 +95,7 @@ a:active {
   font-size: 12px;
   background-color: #52BE80;
 }
-.post-detail .btn-edit {
+.post-detail__top .btn-icon {
   width: 30px;
   padding: 0;
 }
