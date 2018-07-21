@@ -27,10 +27,6 @@ a:active {
   font-size: 36px;
 }
 
-.content {
-  /* margin-left: 20px; */
-}
-
 .date {
   color: #52BE80;
 }
@@ -49,8 +45,14 @@ a:active {
 .top-menu:visited {
   color: #fff;
   float: right;
-  font-size: 26px;
+  font-size: 15px;
   margin-right: 20px;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 50%;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.8);
 }
 
 .post {
@@ -78,18 +80,21 @@ a:active {
 }
 .post-detail .btn {
   float: right;
-  width: 30px;
   height: 30px;
-  padding: 0;
+  padding: 0 10px;
   margin-left: 10px;
   margin-top: -3px;
-  border-radius: 50%;
+  border-radius: 5px;
   border: 0;
   color: #fff;
   text-align: center;
   line-height: 30px;
   font-size: 12px;
   background-color: #52BE80;
+}
+.post-detail .btn-edit {
+  width: 30px;
+  padding: 0;
 }
 .post-detail .btn:hover {
   background-color: #B5AC49;
